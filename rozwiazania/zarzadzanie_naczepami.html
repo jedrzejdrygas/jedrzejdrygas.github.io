@@ -14,6 +14,7 @@
     <!-- ========================= CSS here ========================= -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="stylesheet" href="/dist/styles/style.css">
 
 </head>
@@ -21,7 +22,7 @@
 <body>
     <header class="header navbar-area">
         <div class="container-fluid">
-                <div class="row align-items-center ps-3 pe-3">
+                <div class="row align-items-end ps-3 pe-3">
                         <div class="col-lg-12 ">
                                 <div class="nav-inner"> <!-- Start Navbar -->
                                         <nav class="navbar navbar-expand-lg"> <a class="navbar-brand"
@@ -127,46 +128,61 @@
     
     <!-- Start Hero Area -->
 <!--background-color: rgba(0, 0, 0, 0.5);-->
-<section class="hero-area container-fluid vh-100"
+<section class="hero-area container-fluid vh-100 vw-100 d-flex align-items-end"
     style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.7) 35%,rgba(0, 0, 0, 0.2) 90%, rgba(0, 0, 0, 0)), url(/dist/assets/zarzadzanie_naczepami.jpg);">
 
-    <div class="container h-100 d-flex align-items-end"
-        style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; box-sizing: content-box">
-        <div class="row container-row ">
+    <div class="fluid-container h-90 w-100 "
+        style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px">
+        <div class="row container-row w-100 ">
             <div class="row align-items-center mb-3">
-                <div class="col-xl-12">
+                <div class="col-9">
                     <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s"
                         style="visibility: visible; ">
                         ZARZĄDZANIE NACZEPAMI
                     </h2>
                 </div>
+                <div class="col"></div>
             </div>
 
             <div class="row align-items-center">
-                <div class="col-xl-12">
-                    <h3 class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s"
-                        style="visibility: visible; ">
-                        Efektywniej wykorzystuj swoje naczepy.
-                    </h3>
-                </div>
+
+                <h3 class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s"
+                    style="visibility: visible; ">
+                    Efektywniej wykorzystuj swoje naczepy.
+                </h3>
+
             </div>
 
-            <div class="row pb-5 button-container align-items-center justify-content-start">
+            <div class="row button-container align-items-center justify-content-start">
                 <div class="col-auto pt-2 ">
                     <div class="button-transparent wow animate__animated animate__fadeInUp" data-wow-delay=".8s"
                         style="visibility: visible; ">
                         <a href="./pricing.html" class="btn">Wypróbuj za darmo</a>
                     </div>
                 </div>
-                <div class="col pt-2">
+                <div class="col-auto pt-2">
                     <div class=" button-blue wow animate__animated animate__fadeInUp" data-wow-delay="1.2s"
                         style="visibility: visible; ;">
                         <a href="./pricing.html" class="btn">Zobacz ecoTRUCK w&nbspakcji </a>
                     </div>
                 </div>
             </div>
+
+
         </div>
+
+        <div class="h=10 d-flex w-100 justify-content-center gx-0 mb-2" style="padding-left: 0!important">
+            <a href="#features">
+                <svg class="arrow-down text-center" xmlns="http://www.w3.org/2000/svg" style="fill: #f6f5f489;"
+                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                </svg>
+            </a>
+        </div>
+
     </div>
+
 </section>
 
 <!-- End Hero Area -->
@@ -288,7 +304,11 @@
 
     <!-- ========================= scroll-top ========================= -->
 <a href="#" class="scroll-top" style="display: none;">
-    <i class="lni lni-chevron-up"></i>
+    <svg class="arrow-down text-center" xmlns="http://www.w3.org/2000/svg" style="fill: #f6f5f489;"
+        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path xmlns="http://www.w3.org/2000/svg"
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg>
 </a>
 
     <!-- ========================= JS here ========================= -->
