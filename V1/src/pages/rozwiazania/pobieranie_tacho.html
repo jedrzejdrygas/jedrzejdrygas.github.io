@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>Pobieranie Tacho DDD - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html')
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/pobieranie_tacho_ddd.jpg)",
+    "header": "POBIERANIE TACHO DDD",
+    "description": "Zdalnie sczytuj dane z kart kierowców i tachografów.<br>Oszczędzaj czas swoich pracowników.",
+    })
+    &zwnj;
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "DANE Z TACHOGRAFU",
+    "header_column": "col-lg-3",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "Dzięki odczytom tachografu można porównać czy zarejestrowane prędkość pojazdu, czas jazdy i czynności kierowcy są zgodne z danymi, które zostały wprowadzone do karty kierowcy. Wczytanie danych z urządzeń najczęściej odbywa się raz w miesiącu, gdy kierowca wraca na bazę.",
+    "Nasz system umożliwia zdalny odczyt danych, co oznacza, że dane są pobierane, kopiowane i przesyłane z tachografu zdalnego bezpośrednio na serwer lub komputer dyspozytora. Jest to ekonomiczne i wygodne rozwiązanie oszczędzające czas pracowników." 
+    ]
+})
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

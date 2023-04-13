@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>Kontrola Czasu Aktywności Kierowcy - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html')
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/kontrola_czasu_kierowcy.jpg)",
+    "header": "KONTROLA CZASU AKTYWNOŚCI KIEROWCY",
+    "description": "Monitoruj na bieżąco czas pracy kierowców.",
+    })
+    &zwnj;
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "ODCZYTY",
+    "header_column": "col-lg-2",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "Z poziomu aplikacji ecoTRUCK™ można odczytywać aktualny czas pracy, czas jazdy, czas jazdy w ciągu całego dnia, ostatniego tygodnia i ostatnich dwóch tygodni. Można też prześledzić historię aktywności kierowcy na interaktywnym wykresie.",
+    "Informacje te przydatne są zwłaszcza dla dyspozytora, który wie czy kierowca może jeszcze wykonać załadunek, ponieważ zdąży dojechać do celu w tym samym dniu czy też powinien niezwłocznie wykonać pauzę.",
+    "Dane z tachografu i karty kierowcy odczytywane są zdalnie bez konieczności powrotu pojazdu i kierowcy do firmy. Czytnik karty kierowcy jest samodzielnym urządzeniem podłączonym do Internetu i nie wymagającym uruchomionego komputera."
+    ]
+})
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>Automatyczna Ewidencja Czasu Pracy - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html')
+
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/automatyczna_ewidencja.jpg)",
+    "header": "AUTOMATYCZNA EWIDENCJA CZASU PRACY",
+    "description": "Pozwól by system przygotował dla Ciebie kompletną<br>ewidencję czasu pracy kierowcy.",
+    })
+
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "AUTOMATYCZNE WYLICZENIE DELEGACJI I DIET",
+    "header_column": "col-lg-4",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "Wybierz kierowcę i interesujący okres, a system ecoTRUCK™, sam wykryje z jakich aut w danym czasie korzystał kierowca, rozrysuje na mapie przebytą trasę i wykonaną aktywność. Wyliczy jedną z trzech metod ilość i wysokość należnych diet, określi należne ryczałty noclegowe. Wszystko z uwzględnieniem stawek dla konkretnych krajów. Następnie przeliczy wszystko na złotówki, wygeneruje dokument i zapisze go w bazie danych.",
+    "Możliwa jest też integracja z systemem księgowym. Rozliczanie kierowców jeszcze nigdy nie było tak szybkie i proste. Niepotrzebne są żadne dodatkowe programy ani specjalistyczna wiedza, a podsumowanie delegacji jest gotowe w ciągu minuty po powrocie kierowcy."]
+    })
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

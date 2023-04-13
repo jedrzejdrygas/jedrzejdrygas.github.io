@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>FuelGuard - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html')
+
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/fuelguard.jpg)",
+    "header": "FUELGUARD™",
+    "description": "Aktywnie zabezpiecz paliwo w swoim pojezdzie.<br>Udostępnij kierowcy narzędzie przeciwdziałające parkingowym kradzieżom.",
+    })
+    &zwnj;
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "ZABEZPIECZENIE PALIWA W CZASIE POSTOJU",
+    "header_column": "col-lg-4",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "Poza zawartością naczepy, każdy kierowca przewozi cenny surowiec - paliwo. Dlatego warto zadbać o odpowiednią ochronę także w tej kwestii. Poza standardowymi czujnikami przy wlewie paliwa, oferujemy specjalne zabezpieczenie oparte o pomiar paliwa w baku. Co to oznacza w praktyce?",
+    "Gdyby czujnik wykrył niestandardową i nieautoryzowaną zmianę poziomu paliwa w trakcie postoju, system natychmiast poinformował by dyspozytora. Dodatkowo uruchomił by się klakson ciężarówki, więc jakakolwiek niepożądana aktywność nie pozostała by niezauważona."]
+    })
+    &zwnj;
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>
