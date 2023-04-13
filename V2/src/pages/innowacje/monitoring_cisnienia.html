@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>Monitoring Ciśnienia Opon - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html')
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/monitoring_cisnienia_opon.jpg)",
+    "header": "MONITORING CIŚNIENIA OPON",
+    "description": "Wykorzystaj fabryczne systemy czujników ciśnienia<br>i sprawdzaj ciśnienie w oponach pojazu i naczepy.",
+    })
+    &zwnj;
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "MONITORING CIŚNIENIA",
+    "header_column": "col-lg-4",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "Obecnie większość ciężarówek posiada czujniki zbierające informacje o ciśnieniu w oponach, dzięki czemu kierowca otrzymuje informacje z pomiarów bez opuszczania kokpitu. ecoTRUCK™ dodatkowo umożliwia wgląd w stan opon także dyspozytorowi, który może reagować w przypadku nieprawidłowości."]
+    })
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

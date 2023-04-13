@@ -1,0 +1,7 @@
+<div class="container points-container wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+
+    @@for (var i = 0; i < descriptions.length; i++) {
+        @@include('./points_list_point_part.html',
+        `+(JSON.stringify({"header":descriptions[i]['header'],"description":descriptions[i]['description']}))+`) }
+
+        </div>
