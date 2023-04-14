@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>Live Data - ecoTruck</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html',{
+    "active_o_systemie" :"",
+    "active_innowacje" : "active",
+    "active_rozwiazania" : "",
+    "active_dlaczego_my": "",
+    "active_kontakt" : ""
+    })
+
+
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "url(/dist/assets/live_data.jpg)",
+    "header": "LIVE DATA",
+    "description": "Obserwuj parametry swoich pojazdów niczym mechanicy w Formule&nbsp1.<br>Lepiej rozwiązuj nietypowe problemy.",
+    })
+    &zwnj;
+
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+            @@include('../../components/innovations_description_add_info.html',{
+            "header": "ODCZYT PARAMETRÓW W CZASIE RZECZYWISTYM",
+            "additional_info": "Możliwość odczytu parametrów<br>np:&nbspciśnienia paliwa na listwie wysokiego ciśnienia, nierównomierności pracy cylindrów, napięcia na czujniku ciśnienia doładowania, poboru prądu przez modulator i wielu innych.",
+            "header_column": "col-lg-5",
+            "text_column": "col-lg-7",
+            "descriptions": [
+            "Wykorzystanie technologii 4G i 5G umożliwia szybkie i sprawne przesyłanie danych do użytkownika o niemal każdym parametrze udostępnianym przez pojazd. Przykłady odczytywanych parametrów:<br>- ciśnienie paliwa na listwie wysokiego ciśnienia<br>- nierównomierność pracy cylindrów<br>- napięcie na czujniku ciśnienia doładowania<br>- ustawienie przełącznika w kabinie<br>- pobór prądu przez modulator<br>- ciśnienie w oponach<br>- kąt skrętu kierownicy<br>- temperatura spalin na filtrze DPF",
+            "A to jedynie część możliwości ecoTRUCK™. System pozwala również monitorować komponenty pojazdu (np. poprawność działania przycisków pilota do poziomowania wysokości), indywidualnie ustawiać częstotliwość pobierania danych, rysować interaktywne wykresy czy zapisywać dane do pliku .csv. Liczba odczytywanych parametrów zależna jest od marki i konfiguracji pojazdu. W najbardziej rozbudowanych przypadkach liczba odczytywanych parametrów przekracza 2000."
+            ]
+            })
+            &zwnj;
+            <div class="row" style="padding-top: 40px;">
+                &zwnj;
+            @@include('../../components/innovations_description.html',{
+            "header": "PRAKTYCZNE PRZYPADKI ZASTOSOWANIA LIVE DATA",
+            "header_column": "col-lg-5",
+            "text_column": "col-lg-7",
+            "descriptions": [
+            "<b>TRUDNY PRZYPADEK SERWISOWY</b><br>Problem z autem pojawia się sporadycznie i sam odczyt błędów, nie jest wystarczający do ustalenia źródła problemu. Błąd jest niewykrywalny w trakcie diagnostyki serwisowej i w efekcie samochód wraca na trasę. Nie wykryta usterka ponownie daje o sobie znać. W takiej sytuacji możemy na żywo obserwować niezbędne parametry i sprawniej ustalić źródło problemu. Często pozwala to na uniknięcie wymiany w ciemno elementów, które są podejrzane.",
+            "<b>AWARIA NA TRASIE</b><br>W trakcie jazdy pojawia się komunikat „za wysoka temperatura spalin”. Najczęściej jest to awaria pojedynczego czujnika, a nie rzeczywisty wzrost temperatury. W takim przypadku możliwe jest bezpieczne kontynuowanie jazdy. Dzięki funkcji “Live Data” system ecoTRUCK™, pozwala odczytać temperaturę na wybranych czujnikach, oszczędzając Twój czas i nerwy.",
+            "<b>SPRAWDZENIE SPOSOBU JAZDY KIEROWCY LUB ZGŁASZANYCH PRZEZ NIEGO PROBLEMÓW.</b><br>Niektóre problemy z pojazdem wynikają ze złych nawyków kierowców. Wyobraźmy sobie, że kierowca zgłasza problem z przegrzewaniem się hamulców, natomiast odczyt systemu wykazuje, że w pełni załadowany pojazd porusza się w terenie górzystym, jazda jest dość dynamiczna, a ponadto kierowca używa tylko hamulca roboczego zamiast retardera. Dzięki naszym rozwiązaniom, możliwe jest zweryfikowanie niezbędnych parametrów pracy i przekazanie uwag kierowcy."
+            ]
+        })
+            &zwnj;
+            </div>
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>
