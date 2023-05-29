@@ -104,7 +104,7 @@ class SiemaWithDots extends Siema {
     const mySiema = new SiemaWithDots({
         interval_time: 5000,
         loop: true,
-        draggable: false,
+        draggable: true,
         // on init trigger method created above
         onInit: function () {
             this.addDots();
@@ -117,12 +117,18 @@ class SiemaWithDots extends Siema {
         },
     });
 
-    // let siemaInterval = setInterval(() => mySiema.next(), 5000);
+    document.querySelector(".siema").addEventListener("mousedown", () => {
+        clearInterval(mySiema.interval)
+    });
 
-    // document.querySelector(".dots__item").addEventListener("mouseup", () => {
-    //     console.log("click")
-    //     clearInterval(siemaInterval)
-    //     siemaInterval = setInterval(() => mySiema.next(), 5000);
-    // });
+    document.querySelector(".siema").addEventListener("mouseup", () => {
+        mySiema.interval = setInterval(() => mySiema.next(), 5000);
+    });
+
+
+    document.querySelector(".siema").addEventListener("click", () => {
+        clearInterval(siemaInterval)
+        mySiema.interval = setInterval(() => mySiema.next(), 5000);
+    });
 
 })();
