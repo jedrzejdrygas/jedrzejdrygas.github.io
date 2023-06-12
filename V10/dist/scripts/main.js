@@ -44,6 +44,7 @@ class SiemaWithDots extends Siema {
             const addOrRemove = this.currentSlide === i ? 'add' : 'remove';
             this.dots.querySelectorAll('button')[i].classList[addOrRemove]('dots__item--active');
         }
+        this.clearInterval();
     }
 
     clearInterval() {
