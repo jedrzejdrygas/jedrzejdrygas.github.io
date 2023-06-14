@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>{{{text.rozwiazania_kontrola_czasu_meta_title}}}</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html',{
+    "active_rozwiazania" : "active",
+    "active_kontrola_czasu" : "active"
+    })
+
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "/dist/assets/L/kontrola_czasu_kierowcy.webp",
+    "header": "{{{text.rozwiazania_kontrola_czasu_hero_header}}}",
+    "description": "{{{text.rozwiazania_kontrola_czasu_hero_description}}}",
+    })
+    &zwnj;
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "{{{text.rozwiazania_kontrola_czasu_description_header}}}",
+    "header_column": "col-lg-2",
+    "text_column": "col-lg-7",
+    "descriptions": [
+        "{{{text.rozwiazania_kontrola_czasu_description_point_1}}}",
+        "{{{text.rozwiazania_kontrola_czasu_description_point_2}}}",
+        "{{{text.rozwiazania_kontrola_czasu_description_point_3}}}"
+    ]})
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

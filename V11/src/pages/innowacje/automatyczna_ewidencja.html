@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>{{{text.innowacje_automatyczna_ewidencja_meta_title}}}</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html',{
+    "active_innowacje" : "active",
+    "active_automatyczna_ewidencja" : "active"
+    })
+
+    @@include('../../components/hero.html',{
+    "background_image": "/dist/assets/L/automatyczna_ewidencja.webp",
+    "header": "{{{text.innowacje_automatyczna_ewidencja_hero_header}}}",
+    "description": "{{{text.innowacje_automatyczna_ewidencja_hero_description}}}",
+    })
+
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+    @@include('../../components/innovations_description.html',{
+    "header": "{{{text.innowacje_automatyczna_ewidencja_description_header}}}",
+    "header_column": "col-lg-4",
+    "text_column": "col-lg-7",
+    "descriptions": [
+    "{{{text.innowacje_automatyczna_ewidencja_description_point_1}}}",
+    "{{{text.innowacje_automatyczna_ewidencja_description_point_2}}}"]})
+    &zwnj;
+
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>

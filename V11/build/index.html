@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="/dist/assets/SVG/dark-logo.svg">
+
+	<title>ecoTRUCK™ - Zaawansowany system zarządzania flotą</title>
+
+	<!-- ========================= CSS here ========================= -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="/dist/styles/style.css">
+<link rel="stylesheet" href="/dist/styles/siema_style.css">
+
+</head>
+
+<body>
+
+	<header class="header navbar-area">
+        <div class="container-fluid">
+                <div class="row align-items-end ps-3 pe-3">
+                        <div class="col-lg-12 ">
+                                <div class="nav-inner"> <!-- Start Navbar -->
+                                        <nav class="navbar navbar-expand-lg"> <a class="navbar-brand"
+                                                        href="/index.html"> <img src="/dist/assets/SVG/dark-logo.svg"
+                                                                alt="Logo">
+                                                </a> <button class="navbar-toggler mobile-menu-btn" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#navbarSupportedContent"
+                                                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                                                        aria-label="Toggle navigation">
+                                                        <span class="toggler-icon"></span> <span
+                                                                class="toggler-icon"></span> <span
+                                                                class="toggler-icon"></span> </button>
+                                                <div class="collapse navbar-collapse sub-menu-bar"
+                                                        id="navbarSupportedContent">
+                                                        <ul id="nav" class="navbar-nav ms-auto">
+                                                                <li class="nav-item"> <a href="/index.html"
+                                                                                class="active"
+                                                                                aria-label="Toggle navigation">O SYSTEMIE</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                        <!--Too long description may move crump on mobile-->
+                                                                        <a class="dd-menu collapsed "
+                                                                                href="javascript:void(0)"
+                                                                                data-bs-toggle="collapse"
+                                                                                data-bs-target="#submenu-1-1"
+                                                                                aria-controls="navbarSupportedContent"
+                                                                                aria-expanded="false"
+                                                                                aria-label="Toggle navigation">INNOWACJE</a>
+                                                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                                                                <li
+                                                                                        class="nav-item @@active_zdalna_diagnoza">
+                                                                                        <a
+                                                                                                href="/innowacje/zdalna_diagnoza.html">Zdalna diagnoza pojazdu</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_usuwanie_redukcji_mocy">
+                                                                                        <a
+                                                                                                href="/innowacje/usuwanie_redukcji_mocy.html">Usuwanie redukcji mocy</a>
+                                                                                </li>
+                                                                                <li class="nav-item @@active_live_data">
+                                                                                        <a
+                                                                                                href="/innowacje/live_data.html">Live data</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_monitoring_zuzycia">
+                                                                                        <a
+                                                                                                href="/innowacje/monitoring_zuzycia.html">Monitoring zużycia pojazdu</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_monitoring_cisnienia">
+                                                                                        <a
+                                                                                                href="/innowacje/monitoring_cisnienia.html">Monitoring ciśnienia opon</a>
+                                                                                </li>
+                                                                                <li class="nav-item @@active_fuelguard">
+                                                                                        <a
+                                                                                                href="/innowacje/fuelguard.html">FUELGUARD™</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_automatyczna_ewidencja">
+                                                                                        <a
+                                                                                                href="/innowacje/automatyczna_ewidencja.html">Automatyczna ewidencja pracy</a>
+                                                                                </li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li class="nav-item"> <a
+                                                                                class="dd-menu collapsed "
+                                                                                href="javascript:void(0)"
+                                                                                data-bs-toggle="collapse"
+                                                                                data-bs-target="#submenu-1-2"
+                                                                                aria-controls="navbarSupportedContent"
+                                                                                aria-expanded="false"
+                                                                                aria-label="Toggle navigation">ROZWIĄZANIA</a>
+                                                                        <ul class="sub-menu collapse" id="submenu-1-2">
+                                                                                <li
+                                                                                        class="nav-item @@active_monitoring_gps">
+                                                                                        <a
+                                                                                                href="/rozwiazania/monitoring_gps.html">Monitoring GPS</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_monitoring_zuzycia_paliwa">
+                                                                                        <a
+                                                                                                href="/rozwiazania/monitoring_zuzycia_paliwa.html">Monitoring paliwa i AdBlue®</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_zarzadzanie_naczepami">
+                                                                                        <a
+                                                                                                href="/rozwiazania/zarzadzanie_naczepami.html">Zarządzanie naczepami</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_kontrola_czasu">
+                                                                                        <a
+                                                                                                href="/rozwiazania/kontrola_czasu.html">Kontrola czasu pracy</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_pobieranie_tacho">
+                                                                                        <a
+                                                                                                href="/rozwiazania/pobieranie_tacho.html">Pobieranie tacho DDD</a>
+                                                                                </li>
+                                                                                <li
+                                                                                        class="nav-item @@active_komunikator_firma_kierowca">
+                                                                                        <a
+                                                                                                href="/rozwiazania/komunikator_firma_kierowca.html">Komunikator firma - kierowca</a>
+                                                                                </li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li class="nav-item"> <a href="/dlaczego_my.html"
+                                                                                class=""
+                                                                                aria-label="Toggle navigation">DLACZEGO MY</a> </li>
+                                                                <li class="nav-item"> <a href="/kontakt.html"
+                                                                                class=""
+                                                                                aria-label="Toggle navigation">KONTAKT</a>
+                                                                </li>
+                                                        </ul>
+                                                </div> <!-- navbar collapse -->
+                                                <!-- <div class="button">                            <a href="pricing.html" class="btn">Get Tickets<i class="lni lni-ticket"></i></a>                        </div>-->
+                                        </nav> <!-- End Navbar -->
+                                </div>
+                        </div>
+                </div> <!-- row -->
+        </div> <!-- container -->
+</header><!-- End Header Area -->
+
+	
+    <!-- Start Hero Area -->
+<!--background-color: rgba(0, 0, 0, 0.5);-->
+<section class="hero-area container-fluid vh-100 vw-100 d-flex align-items-end">
+    
+    <img src="/dist/assets/L/index.webp" alt="background image" class="img-fluid position-absolute w-100 h-100"
+        style="object-fit: cover; z-index: -1; top: 0; left: 0;">
+
+    <div class="fluid-container h-90 w-100 "
+        style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; top: 0; left:0">
+        <div class="row container-row w-100 ">
+            <div class="row align-items-center mb-3">
+                <div class="col-9">
+                    <h2 class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s"
+                        style="visibility: visible; ">
+                        Zaawansowany system zarządzania flotą
+                    </h2>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row align-items-center">
+
+                <h3 class="wow animate__animated animate__fadeInUp" data-wow-delay=".4s"
+                    style="visibility: visible; ">
+                    Bezpieczne i efektywne zarządzanie flotą dzięki ecoTRUCK™ Diagnosis - Twoje narzędzie do sukcesu
+                </h3>
+
+            </div>
+
+            <div class="row button-container align-items-center justify-content-start">
+                <div class="col-auto pt-2 ">
+                    <div class="button-transparent wow animate__animated animate__fadeInUp" data-wow-delay=".8s"
+                        style="visibility: visible; ">
+                        <a href="./kontakt.html" class="btn">Wypróbuj za darmo</a>
+                    </div>
+                </div>
+                <div class="col-auto pt-2">
+                    <div class=" button-blue wow animate__animated animate__fadeInUp" data-wow-delay="1.2s"
+                        style="visibility: visible; ;">
+                        <a href="./kontakt.html" class="btn">Zobacz ecoTRUCK™ w akcji</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="arrow-down-container d-flex w-100 justify-content-center gx-0 mb-2" style="padding-left: 0!important">
+            <a href="#description">
+                <svg class="arrow-down text-center" xmlns="http://www.w3.org/2000/svg" style="fill: #f6f5f489;"
+                    viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- End Hero Area -->
+    
+
+	<!-- Start Features Area -->
+	<section class="features section pb-1">
+		<div class="description-anchor" id="description"></div>
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-xl-3 col-s-12">
+					<div class="section-title wow animate__animated animate__fadeInRight" data-wow-delay="0.8s"
+						style="visibility: visible;">
+						O SYSTEMIE
+					</div>
+				</div>
+				<div class="col-xl-8 wow animate__animated animate__fadeInUp" data-wow-delay=".2s"
+					style="visibility: visible;">
+					ecoTRUCK™ to innowacyjna platforma zdalnej diagnozy, zintegrowana z systemem monitoringu i śledzenia pojazdów ciężarowych różnych marek. Umożliwia diagnozę pojazdu znajdującego się w trasie z poziomu aplikacji webowej.<br><br>ecoTRUCK™ to kompleksowy system odpowiadający na rozmaite potrzeby różnych grup użytkowników. <br>Dla pracowników warsztatu kluczowe informacje obejmują błędy i parametry pracy pojazdów w czasie rzeczywistym, dyspozytor natomiast powinien mieć wgląd w położenie i czas pracy kierowców, zaś dla menadżera floty istotne są dane o stanie zużycia pojazdu i zbliżających się przeglądach. Jesteśmy świadomi, że poszczególni użytkownicy mają indywidualne potrzeby, stąd aby wyjść naprzeciw oczekiwaniom naszych klientów stworzyliśmy wyjątkowo rozbudowany, a jednocześnie elastyczny i intuicyjny w obsłudze system.<br> <br>ecoTRUCK™ to połączenie konwencjonalnych i nowatorskich rozwiązań. Kluczową innowacją systemu jest zdalna diagnoza pojazdu oraz odczyt parametrów w czasie rzeczywistym. Nasz produkt zapewnia wgląd w poziom zużycia elementów eksploatacyjnych pojazdu bez konieczności podpinania komputera diagnostycznego pod gniazdo OBD. System dodatkowo umożliwia zdalne wykasowanie trybu redukcji mocy i zapisanych błędów.<br>Wszystko to dostępne z poziomu przeglądarki internetowej.
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row ">
+				<div class="col-xl-3 col-s-12">
+					<div class="section-title wow animate__animated animate__fadeInRight" data-wow-delay="0.8s"
+						style="visibility: visible;">
+						ROZWIĄZANIE DLA KAŻDEJ PLATFORMY
+					</div>
+				</div>
+				<div class="col-xl-8 wow animate__animated animate__fadeInUp" data-wow-delay=".2s"
+					style="visibility: visible;">
+					ecoTRUCK™ to narzędzie dedykowane do obsługi pojazdów wielu marek z poziomu jednej spójnej aplikacji webowej. System współpracuje z większością pojazdów popularnych europejskich producentów, a jeżeli to konieczne, zawsze istnieje możliwość dodania nowych modeli.<br><br>Jednym z głównych założeń projektowych systemu była łatwa i szybka aktualizacja danych pojazdów. Nowe dane pojawiające się na serwerze natychmiast dostępne są dla wszystkich urządzeń i klientów. Pozwala to na szybkie wprowadzenie do systemu nowego typu pojazdu bez dodatkowej instalacji czy konfiguracji.<br>Klienci mogą być spokojni gdy w przyszłości powiększą swój park maszynowy o nowe pojazdy, wszystkie obsługiwane będą przez nasz system.
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /End Features Area -->
+
+	<!-- Start Products List Area Innovation -->
+	<section class="products-list section pb-1" id="innovations">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInRight"
+					style="visibility: visible; ">
+					<div class="section-title">
+						CZYM SIĘ WYRÓŻNIAMY
+					</div>
+					<div class="row main-title-description">
+						Poznaj nasze innowacyjne rozwiązania, które na nowo definiują pojęcie telematyki.
+					</div>
+				</div>
+
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible;">
+					<a href="/innowacje/zdalna_diagnoza.html">
+						<div class="row">
+							<img src="dist/assets/S/zdalna_diagnoza_pojazdu.webp" alt="#">
+						</div>
+						<div class="row title">
+							Zdalna diagnoza pojazdu
+						</div>
+						<div class="row description">
+							Przeprowadzaj zdalnie kompletną diagnostykę komputerową całego pojazdu.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true" aria-label="View this link" width="20" height="20"
+								viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/usuwanie_redukcji_mocy.html">
+						<div class="row">
+							<img src="dist/assets/S/usuwanie_redukcji_mocy.webp" alt="#">
+						</div>
+						<div class="row title">
+							Usuwanie redukcji mocy
+						</div>
+						<div class="row description">
+							Nie odchodząc od biurka przywróć moc swoich pojazdów. Usuwaj redukcję mocy i kasuj błędy w sterownikach.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true"
+								aria-label="View this link" width="20" height="20" viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+
+
+
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/live_data.html">
+						<div class="row">
+							<img src="dist/assets/S/live_data.webp" alt="#">
+						</div>
+						<div class="row title">
+							Live data
+						</div>
+						<div class="row description">
+							Obserwuj parametry swoich pojazdów niczym mechanicy w Formule 1. Skutecznie rozwiązuj skomplikowane problemy.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true"
+								aria-label="View this link" width="20" height="20" viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/monitoring_zuzycia.html">
+						<div class="row">
+							<img src="dist/assets/S/monitoring_zuzycia_pojazdu.webp" alt="#">
+						</div>
+						<div class="row title">
+							Monitoring zużycia pojazdu
+						</div>
+						<div class="row description">
+							Bądź na bieżąco ze stanem technicznym swoich pojazdów. W jedym miejscu gromadź dane dotyczące operacji serwisowych, polis ubezpieczeniowych czy legalizacji.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true"
+								aria-label="View this link" width="20" height="20" viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/monitoring_cisnienia.html">
+						<div class="row">
+							<img src="dist/assets/S/monitoring_cisnienia_opon.webp" alt="#">
+						</div>
+						<div class=" row title">
+							Monitoring ciśnienia opon
+						</div>
+						<div class="row description">
+							Wykorzystaj fabryczne systemy czujników ciśnienia i monitoruj ciśnienie w oponach pojazdu i naczepy.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true" aria-label="View this link" width="20" height="20"
+								viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/fuelguard.html">
+						<div class="row">
+							<img src="dist/assets/S/fuelguard.webp" alt="#">
+						</div>
+						<div class="row title">
+							FuelGuard™
+						</div>
+						<div class="row description">
+							Aktywnie zabezpiecz paliwo w swoim pojezdzie. Udostępnij kierowcy narzędzie przeciwdziałające parkingowym kradzieżom.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true"
+								aria-label="View this link" width="20" height="20" viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+
+				<div class="single-part col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInUp"
+					style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+					<a href="/innowacje/automatyczna_ewidencja.html">
+						<div class="row">
+							<img src="dist/assets/S/automatyczna_ewidencja.webp" alt="#">
+						</div>
+						<div class="row title">
+							Automatyczna ewidencja pracy
+						</div>
+						<div class="row description">
+							Pozwól by system przygotował dla Ciebie kompletną ewidencję czasu pracy kierowcy.
+						</div>
+						<div class="row go-to">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+								aria-hidden="true"
+								aria-label="View this link" width="20" height="20" viewBox="0 0 20 20" slot="icon">
+								<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z">
+								</path>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Products List Area Innovation -->
+
+
+	<!-- Start Products List Area Solutions -->
+	<section class="products-list-2 section pb-1" id="solutions">
+				<div class="col-xl-3 col-md-6 col-12 wow animate__animated animate__fadeInRight"
+					style="visibility: visible; ">
+					<div class="section-title">
+						KLUCZOWE FUNKCJONALNOŚCI
+					</div>
+				</div>
+				</div>
+			
+
+
+				
+			<div class="siema-container container-fluid">
+				<div class="siema">
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Monitoring GPS</div>
+        <div class="siema-text">Monitoruj położenie pojazdu w czasie rzeczywistym, wyświetlaj historię przejazdów i postojów.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/monitoring_gps.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/sledzenie_gps.webp" />
+    </div>
+
+</div>
+
+
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Monitoring paliwa i AdBlue®</div>
+        <div class="siema-text">Kontroluj zużycie paliwa i AdBlue®. Monitoruj zużycie paliwa w wybranym okresie czasu.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/monitoring_zuzycia_paliwa.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/monitoring_zuzycia_adblue.webp" />
+    </div>
+
+</div>
+
+
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Zarządzanie naczepami</div>
+        <div class="siema-text">Efektywniej wykorzystuj swoje naczepy.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/zarzadzanie_naczepami.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/zarzadzanie_naczepami.webp" />
+    </div>
+
+</div>
+
+					
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Kontrola czasu pracy</div>
+        <div class="siema-text">Zarządzaj czasem jazdy i odpoczynku swoich kierowców. Unikaj kar za przekroczenia.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/kontrola_czasu.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/kontrola_czasu_kierowcy.webp" />
+    </div>
+
+</div>
+
+					
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Pobieranie tacho DDD</div>
+        <div class="siema-text">Zdalnie gromadź dane z kart kierowców i tachografów. Oszczędzaj czas swoich pracowników.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/pobieranie_tacho.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/pobieranie_tacho_ddd.webp" />
+    </div>
+
+</div>
+
+					
+					<div class="grid-container">
+    <div class="description-container">
+        <div class="siema-header">Komunikator firma - kierowca</div>
+        <div class="siema-text">Szybko i sprawnie komunikuj się ze swoimi kierowcami. Przesyłaj wiadomości i aktualizuj statusy.</div>
+        <div class="button-blue">
+            <a href="/rozwiazania/komunikator_firma_kierowca.html" class="btn">Dowiedz się więcej</a>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="/dist/assets/L/komunikator_firma_kierowca.webp" />
+    </div>
+
+</div>
+
+
+				</div>
+				
+
+			</div>
+
+
+	</section>
+
+	<!-- End Products List Area Solutions -->
+
+
+
+
+	<!-- Start Footer Area -->
+<footer class="footer"> <!-- Start Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="inner-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12"> <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo"> <a href="/index.html"> <img src="/dist/assets/SVG/dark-logo.svg"
+                                        alt="#">
+                                </a>
+                            </div> <br>
+                            <p>© Copyright 2023 ecoTRUCK™<br>All rights reserved.</p>
+                        </div> <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12"> <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>INNOWACJE</h3>
+                            <ul>
+                                <li><a href="/innowacje/zdalna_diagnoza.html">Zdalna diagnoza pojazdu</a></li>
+                                <li><a href="/innowacje/usuwanie_redukcji_mocy.html">Usuwanie redukcji mocy</a></li>
+                                <li><a href="/innowacje/live_data.html">Live data</a></li>
+                                <li><a href="/innowacje/monitoring_zuzycia.html">Monitoring żużycia pojazdu</a></li>
+                                <li><a href="/innowacje/monitoring_cisnienia.html">Monitoring ciśnienia opon</a></li>
+                                <li><a href="/innowacje/fuelguard.html">FUELGUARD™</a></li>
+                                <li><a href="/innowacje/automatyczna_ewidencja.html">Automatyczna ewidencja pracy</a>
+                                </li>
+                            </ul>
+                        </div> <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12"> <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>ROZWIĄZANIA</h3>
+                            <ul>
+                                <li><a href="/rozwiazania/monitoring_gps.html">Monitoring GPS</a></li>
+                                <li><a href="/rozwiazania/monitoring_zuzycia_paliwa.html">Monitoring paliwa i AdBlue®</a></li>
+                                <li><a href="/rozwiazania/zarzadzanie_naczepami.html">Zarządzanie naczepami</a></li>
+                                <li><a href="/rozwiazania/kontrola_czasu.html">Kontrola czasu pracy</a></li>
+                                <li><a href="/rozwiazania/pobieranie_tacho.html">Pobieranie tacho DDD</a></li>
+                                <li><a href="/rozwiazania/komunikator_firma_kierowca.html">Komunikator firma - kierowca</a></li>
+                            </ul>
+                        </div> <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12"> <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>POZNAJ</h3>
+                            <ul>
+                                <li><a href="/index.html">O systemie</a></li>
+                                <li><a href="/dlaczego_my.html">Dlaczego my</a></li>
+                                <!-- <li><a href="javascript:void(0)">Prywatność</a></li> -->
+                                <li>&nbsp;</li>
+                            </ul>
+                            <h3><a href="/kontakt.html">KONTAKT</a></h3>
+                            <p class="contact-details">ECOTRUCK DIAGNOSIS SP. Z O.O.<br>tel. 000 000 000<br><a href = "mailto: info@eco-truck.eu">info@eco-truck.eu</a><br><br>ul. Wałbrzyska 16A/14<br>52-314 Wrocław<br><br>NIP: 8982252976<br>KRS: 0000804544</p>
+                        </div> <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--/ End Footer Top -->
+    <!-- Start Copyright Area >                <div class="copyright">            <div class="container">                <div class="inner-content">                    <div class="row">                        <div class="col-12">                            <p class="copyright-text">&nbsp;                                                        </p>                        </div>                    </div>                </div>            </div>        </div>        <!-- End Copyright Area -->
+</footer> <!--/ End Footer Area -->
+
+	<!-- ========================= scroll-top ========================= -->
+<a href="#" class="scroll-top" style="display: none;">
+    <svg class="arrow-down text-center" xmlns="http://www.w3.org/2000/svg" style="fill: #f6f5f489;"
+        viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path xmlns="http://www.w3.org/2000/svg"
+            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+    </svg>
+</a>
+
+	<!-- ========================= JS here ========================= -->
+<script src="/dist/scripts/siema.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="/dist/scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    @@include('../../components/meta.html')
+
+    <title>{{{text.innowacje_live_data_meta_title}}}</title>
+
+    @@include('../../components/css_links.html')
+
+</head>
+
+<body>
+    @@include('../../components/header.html',{
+    "active_innowacje" : "active",
+    "active_live_data" : "active"
+    })
+
+
+    &zwnj;
+    @@include('../../components/hero.html',{
+    "background_image": "/dist/assets/L/live_data.webp",
+    "header": "{{{text.innowacje_live_data_hero_header}}}",
+    "description": "{{{text.innowacje_live_data_hero_description}}}",
+    })
+    &zwnj;
+
+    <div class="section">
+        <div class="solutions-area container-fluid">
+            <div class="description-anchor" id="description"></div>
+            &zwnj;
+            @@include('../../components/innovations_description_add_info.html',{
+            "header": "{{{text.innowacje_live_data_description_header}}}",
+            "additional_info": "{{{text.innowacje_live_data_description_info}}}",
+            "header_column": "col-lg-5",
+            "text_column": "col-lg-7",
+            "descriptions": [
+            "{{{text.innowacje_live_data_description_point_1}}}",
+            "{{{text.innowacje_live_data_description_point_2}}}"
+            ]
+            })
+            &zwnj;
+            <div class="row" style="padding-top: 40px;">
+                &zwnj;
+            @@include('../../components/innovations_description.html',{
+            "header": "{{{text.innowacje_live_data_description_header_2}}}",
+            "header_column": "col-lg-5",
+            "text_column": "col-lg-7",
+            "descriptions": [
+            "{{{text.innowacje_live_data_description_point_3}}}",
+            "{{{text.innowacje_live_data_description_point_4}}}",
+            "{{{text.innowacje_live_data_description_point_5}}}"
+            ]
+        })
+            &zwnj;
+            </div>
+        </div>
+    </div>
+    @@include('../../components/footer.html')
+
+    @@include('../../components/scroll_top.html')
+
+    @@include('../../components/js_links.html')
+
+</body>
+
+</html>
