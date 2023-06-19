@@ -5,8 +5,8 @@
 class SiemaWithDots extends Siema {
     constructor(interval_time) {
         super(...arguments);
-        console.log(arguments[0])
-        this.interval = setInterval(() => super.next(), arguments[0]['interval_time']);
+        this.interval_time = arguments[0]['interval_time'];
+        this.interval = setInterval(() => super.next(), this.interval_time);
     }
 
     addDots() {
@@ -22,11 +22,12 @@ class SiemaWithDots extends Siema {
 
             // add a class to dot
             dot.classList.add('dots__item');
+            dot.ariaLabel = "Switch to slide " + (i + 1); 
 
             // add an event handler to each of them
             dot.addEventListener('click', () => {
                 this.goTo(i);
-                this.clearInterval();
+                this.resetInterval();
             })
 
             // append dot to a container for all of them
@@ -44,18 +45,23 @@ class SiemaWithDots extends Siema {
             const addOrRemove = this.currentSlide === i ? 'add' : 'remove';
             this.dots.querySelectorAll('button')[i].classList[addOrRemove]('dots__item--active');
         }
-        this.clearInterval();
     }
 
-    clearInterval() {
+    stopInterval() {
         clearInterval(this.interval);
-        this.interval = setInterval(() => super.next(), 5000);
+    }
+
+    startInterval() {
+        this.interval = setInterval(() => super.next(), this.interval_time);
+    }
+
+    resetInterval() {
+        stopInterval();
+        startInterval();
     }
 }
 
 
-
-(function () {
     /*=====================================
     Sticky
     ======================================= */
@@ -99,8 +105,8 @@ class SiemaWithDots extends Siema {
 
 
 
-
-
+// Check if siema element exists
+if (document.querySelector(".siema")) {
     // instantiate new extended Siema
     const mySiema = new SiemaWithDots({
         interval_time: 5000,
@@ -112,24 +118,18 @@ class SiemaWithDots extends Siema {
             this.updateDots();
         },
 
-        // on change trigger method created above
-        onChange: function () {
-            this.updateDots()
-        },
-    });
+            // on change trigger method created above
+            onChange: function () {
+                this.updateDots()
+            },
+        });
 
-    document.querySelector(".siema").addEventListener("mousedown", () => {
-        clearInterval(mySiema.interval)
-    });
+        document.querySelector(".siema").addEventListener("mousedown", () => {
+            mySiema.stopInterval();
+        });
 
-    document.querySelector(".siema").addEventListener("mouseup", () => {
-        mySiema.interval = setInterval(() => mySiema.next(), 5000);
-    });
+        document.querySelector(".siema").addEventListener("mouseup", () => {
+            mySiema.startInterval();
+        });
+    }
 
-
-    document.querySelector(".siema").addEventListener("click", () => {
-        clearInterval(siemaInterval)
-        mySiema.interval = setInterval(() => mySiema.next(), 5000);
-    });
-
-})();
